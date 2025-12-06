@@ -1,6 +1,16 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  TextbookDocuments,
+  TextbookPages,
+  TextbookHighlights,
+  ScanJobs,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    TextbookDocuments,
+    TextbookPages,
+    TextbookHighlights,
+    ScanJobs,
+  },
 });
